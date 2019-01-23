@@ -1,0 +1,13 @@
+Lembretes:
+Para entrar na rede criada, utilize o comando attach apontando para o hostname e a porta rpc:
+    - geth attach http://localhost:8545
+
+Para usar o Miner, utilize o seguinte (explicação em 5.5 de http://chainskills.com/2017/03/10/part-3-setup-the-private-chain-miners/):
+
+
+geth attach http://localhost:8545 ipc:./miner2/geth.ipc
+
+
+-- seed: candy maple cake sugar pudding cream honey rich smooth crumble sweet treat - candy maple cake sugar pudding cream honey rich smooth crumble sweet treat 
+
+--chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/popup.html
