@@ -8,14 +8,14 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603580605d6000396000f3006080604052600080fd00a165627a7a72305820102011cb27ba97baee7c8b0c5a6c3b6943ecc02317305126285af71712142f640029",
-  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820102011cb27ba97baee7c8b0c5a6c3b6943ecc02317305126285af71712142f640029",
-  "sourceMap": "65:234:2:-;;;231:63;8:9:-1;5:2;;;30:1;27;20:12;5:2;231:63:2;276:10;268:5;;:18;;;;;;;;;;;;;;;;;;65:234;;;;;;",
-  "deployedSourceMap": "65:234:2:-;;;;;",
-  "source": "// solium-disable linebreak-style\r\n\r\npragma solidity ^0.4.18;\r\n\r\ncontract Ownable {\r\n\r\n    address owner;\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"sender mus be equals owner\");\r\n        _;\r\n    }\r\n\r\n    function Ownable() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n}",
-  "sourcePath": "C:\\Users\\Jessé Russo\\Documents\\Estudo\\Blockchain\\eth\\ChainSkills\\Training\\chainlist\\contracts\\Ownable.sol",
+  "bytecode": "0x6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603580605d6000396000f3006080604052600080fd00a165627a7a7230582081da5fd3d5151db03c3535013c33cb039017503ddc7a79826a9d365ce7a5d9510029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582081da5fd3d5151db03c3535013c33cb039017503ddc7a79826a9d365ce7a5d9510029",
+  "sourceMap": "65:229:2:-;;;231:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;231:58:2;271:10;263:5;;:18;;;;;;;;;;;;;;;;;;65:229;;;;;;",
+  "deployedSourceMap": "65:229:2:-;;;;;",
+  "source": "// solium-disable linebreak-style\r\n\r\npragma solidity ^0.4.18;\r\n\r\ncontract Ownable {\r\n\r\n    address owner;\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"sender mus be equals owner\");\r\n        _;\r\n    }\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n}",
+  "sourcePath": "F:\\Dev\\repo\\chainlist-truff4\\Training\\chainlist\\contracts\\Ownable.sol",
   "ast": {
-    "absolutePath": "/C/Users/Jessé Russo/Documents/Estudo/Blockchain/eth/ChainSkills/Training/chainlist/contracts/Ownable.sol",
+    "absolutePath": "/F/Dev/repo/chainlist-truff4/Training/chainlist/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         357
@@ -231,7 +231,7 @@
             "body": {
               "id": 355,
               "nodeType": "Block",
-              "src": "257:37:2",
+              "src": "252:37:2",
               "statements": [
                 {
                   "expression": {
@@ -248,7 +248,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 335,
-                      "src": "268:5:2",
+                      "src": "263:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -265,7 +265,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 372,
-                        "src": "276:3:2",
+                        "src": "271:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -279,13 +279,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "276:10:2",
+                      "src": "271:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "268:18:2",
+                    "src": "263:18:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -293,7 +293,7 @@
                   },
                   "id": 354,
                   "nodeType": "ExpressionStatement",
-                  "src": "268:18:2"
+                  "src": "263:18:2"
                 }
               ]
             },
@@ -303,36 +303,36 @@
             "isConstructor": true,
             "isDeclaredConst": false,
             "modifiers": [],
-            "name": "Ownable",
+            "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 348,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "247:2:2"
+              "src": "242:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 349,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "257:0:2"
+              "src": "252:0:2"
             },
             "scope": 357,
-            "src": "231:63:2",
+            "src": "231:58:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 358,
-        "src": "65:234:2"
+        "src": "65:229:2"
       }
     ],
-    "src": "37:262:2"
+    "src": "37:257:2"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Jessé Russo/Documents/Estudo/Blockchain/eth/ChainSkills/Training/chainlist/contracts/Ownable.sol",
+    "absolutePath": "/F/Dev/repo/chainlist-truff4/Training/chainlist/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         357
@@ -548,7 +548,7 @@
             "body": {
               "id": 355,
               "nodeType": "Block",
-              "src": "257:37:2",
+              "src": "252:37:2",
               "statements": [
                 {
                   "expression": {
@@ -565,7 +565,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 335,
-                      "src": "268:5:2",
+                      "src": "263:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -582,7 +582,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 372,
-                        "src": "276:3:2",
+                        "src": "271:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -596,13 +596,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "276:10:2",
+                      "src": "271:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "268:18:2",
+                    "src": "263:18:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -610,7 +610,7 @@
                   },
                   "id": 354,
                   "nodeType": "ExpressionStatement",
-                  "src": "268:18:2"
+                  "src": "263:18:2"
                 }
               ]
             },
@@ -620,39 +620,39 @@
             "isConstructor": true,
             "isDeclaredConst": false,
             "modifiers": [],
-            "name": "Ownable",
+            "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 348,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "247:2:2"
+              "src": "242:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 349,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "257:0:2"
+              "src": "252:0:2"
             },
             "scope": 357,
-            "src": "231:63:2",
+            "src": "231:58:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 358,
-        "src": "65:234:2"
+        "src": "65:229:2"
       }
     ],
-    "src": "37:262:2"
+    "src": "37:257:2"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.1",
-  "updatedAt": "2019-01-23T00:34:12.502Z"
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-02-03T17:39:28.562Z"
 }
