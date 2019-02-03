@@ -46,7 +46,7 @@ contract ChainList is Ownable {
     }
 
     // sell an article
-    function sellArticle(string _name, string _description, uint256 _price) public {
+    function sellArticle(string memory _name, string memory _description, uint256 _price) public {
         // a new article
         articleCounter++;
 
@@ -54,13 +54,13 @@ contract ChainList is Ownable {
         articles[articleCounter] = Article(
             articleCounter,
             msg.sender,
-            0x0,
+            0x00,
             _name,
             _description,
             _price
         );
 
-		emit LogSellArticle(articleCounter, msg.sender, _name, _price);
+        emit LogSellArticle(articleCounter, msg.sender, _name, _price);
     }
     // fetch the number of articles in the contract
     function getNumberOfArticles() public view returns (uint) {
@@ -68,7 +68,7 @@ contract ChainList is Ownable {
     }
 
     // fetch and return all article IDs for articles still for sale
-    function getArticlesForSale() public view returns (uint[]) {
+    function getArticlesForSale() public view returns (uint[] memory) {
         // prepare output array
         uint[] memory articleIds = new uint[](articleCounter);
 
@@ -102,7 +102,7 @@ contract ChainList is Ownable {
         Article storage article = articles[_id];
 
         // we check that the article has not been sold yet
-        require(article.buyer == 0X0);
+        require(article.buyer == 0x0);
 
         // we don't allow the seller to buy his own article
         require(msg.sender != article.seller);
